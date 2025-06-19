@@ -1,3 +1,4 @@
+
 """
 ARITH OPERATION :-
 01 Write a Python program to input two numbers and print their sum, difference, product, and quotient.
@@ -50,26 +51,38 @@ print("power value =",pval)
 """
 
 
-
 """
 #LOGICAL OPERATOR:-
-01#Write a Python program to check if a number is positive and even.
+#Write a Python program to check if a number is positive and even.
 
 a=int(input("enter the number"))
 print("number you entered is=",a)
-print("ANSWER IS= ",a>=0 and a%2==0)
+if (a%2==0 and a>=0):
+    print(a," is positive and even")
+else:
+    print(a,"no is not positive and even")
 
-02#Write a program to check if a given number is divisible by 3 or 5.
+
+#Write a program to check if a given number is divisible by 3 or 5.
 no=int(input("enter the no to check the divisibility "))
 print("number you entered is=",no)
-print("ANSWER IS=",no%3==0 or no%5==0)
-
-03#Write a program to check whether a year is not a leap year using logical not.
+if(no%3==0 or no%5==0):
+    if(no%3==0):
+        print(no,"no is divisible by 3 ")
+    else:
+        print(no,"no is divisible by 5")
+else:
+    print(no,"no is not divisible by 3 or 5")
+    
+#Write a program to check whether a year is not a leap year using logical not.
 year=int(input("enter the no of days in the year either 365 or 366"))
 print("days you have entered is=",year)
-print("is year a leap year??",not year!=366)
+if(not year!=366):
+    print(year,"")
+else:
+    print(year,"")
 
-04#Given two Boolean variables a and b, write a program to evaluate and print the result of a and b, a or b, and not a.
+#Given two Boolean variables a and b, write a program to evaluate and print the result of a and b, a or b, and not a.
 a=int(input("enter the value of a"))
 b=int(input("enter the value of b"))
 print("value of a=",a)
@@ -93,19 +106,17 @@ print("value of B= ",B)
 print("ANSWER IS=",A is B)
 print("ANSWER IS=",A is not B)
 
-02#Write a program to check whether two variables point to the same object in memory
+#Write a program to check whether two variables point to the same object in memory
 a="Hiral"
-b="Hiral Sharma"
-c="Sharma"
-d="Hiral"
+b="Hir"
+
 print("1st object=",a)
 print("2nd object=",b)
-print("3rd object=",c)
-print("4th object=",d)
-print("match is exact ??",a is b)
-print("match is exact ??",b is c)
-print("match is exact ??",a is d)
-print("match is exact ??",b is d)
+if(a is b):
+    print("both a and b are same ")
+else :
+    print("both a and b are not same ")
+
 
 03#Write a program to demonstrate is and is not with None.
 #Example: x = None; print(x is None)
@@ -119,30 +130,39 @@ print("value of x is=",x is None)
 """
 #MEMBERSHIP OPERATOR:-
 
- 01#Write a Python program to check if a character is present in a string.
+#Write a Python program to check if a character is present in a string.
 str=input("enter the string")
 char=input("enter the char to check present or not")
-print(char in str)
+if(char in str):
+    print(char,"is present in string",str)
+else:
+    print(char," is not present in string",str)
 
 
-02#Write a program to check if a number exists in a given list.
+#Write a program to check if a number exists in a given list.
 a=[1,2,3,4]
 check=int(input("enter the number which is present in a"))
-print(check in a)
+if(check in a):
+    print(check,"present in the list")
+else:
+    print(check,"not present in the list")
 
-03#Write a program that checks if a keyword like "data" is in a list of strings.
+#Write a program that checks if a keyword like "data" is in a list of strings.
 a=['H',"data",'J',"hiral","hs"]
 check=input("enter the number to check if it is present in a")
-print(check in a)
+if(check in a):
+    print(check,"present in string \n",a)
+else:
+    print(check,"not present in string \n",a)
 
 #Write a program to search for a user input in a list and return if it's "Found" or "Not Found".
 a=input("enter the list")
 b=input("enter to check present in a or not")
-print(b in a)
+if(b in a):
+    print(b,"found in list\n",a)
+else:
+    print(b,"not found in list",a)
 """
-
-
-
 """
 MCQS-:
 Q1. What will be the result of the following expression: 5 + 3 * 2?
