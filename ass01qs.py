@@ -78,9 +78,9 @@ else:
 year=int(input("enter the no of days in the year either 365 or 366"))
 print("days you have entered is=",year)
 if(not year!=366):
-    print(year,"")
+    print(year,"leap year")
 else:
-    print(year,"")
+    print(year,"not a leap year")
 
 #Given two Boolean variables a and b, write a program to evaluate and print the result of a and b, a or b, and not a.
 a=int(input("enter the value of a"))
