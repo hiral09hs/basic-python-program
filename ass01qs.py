@@ -1,3 +1,4 @@
+
 """
 ARITH OPERATION :-
 01 Write a Python program to input two numbers and print their sum, difference, product, and quotient.
@@ -77,9 +78,15 @@ else:
 year=int(input("enter the no of days in the year either 365 or 366"))
 print("days you have entered is=",year)
 if(not year!=366):
+<<<<<<< HEAD
     print(year,"")
 else:
     print(year,"")
+=======
+    print(year,"leap year")
+else:
+    print(year,"not a leap year")
+>>>>>>> e880729432567b110f343a922859eceffa819dee
 
 #Given two Boolean variables a and b, write a program to evaluate and print the result of a and b, a or b, and not a.
 a=int(input("enter the value of a"))
@@ -162,9 +169,6 @@ if(b in a):
 else:
     print(b,"not found in list",a)
 """
-
-
-
 """
 MCQS-:
 Q1. What will be the result of the following expression: 5 + 3 * 2?
