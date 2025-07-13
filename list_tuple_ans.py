@@ -9,14 +9,15 @@ print("tuple is=",tuples)
 
 
 #Convert a list to a tuple and vice versa.
-a=[(23,49,50,3,5)]
+a=[23,49,50,3,5]
+print(a)
+b=tuple(a)
+print(b)
+print(type(b))
+a=list(b)
+print(a)
 print(type(a))
-"""
 
-
-
-
-"""
 #Check if a specific element exists in a list and in a tuple.
 a=[23,49,50,3,5]
 b=(46,49,7,9,12,30)
@@ -69,15 +70,17 @@ print(b)
 a.append(99)
 print(a)
 b.append(99)
-"""
+
     
-"""
+
 #Remove all duplicates from a list using a loop and store the result as a tuple.
 a=(23,24,23,4,6,5,4,23,6,9)
 for x in range(0,len(a)):
-    print(a[x])
+    x=set(a)
+print(tuple((x)))
    
-
+"""
+"""
 #Slice a list and a tuple to get every second element.
 a=[23,49,50,3,5]
 b=(46,49,7,9,12,30)
@@ -96,7 +99,7 @@ a=[23,49,23,50,23,5]
 b=(46,49,7,49,12,30)
 print(a.count(23))
 print(b.count(49))
-"""
+
 
 #Merge two lists and two tuples respectively.
 a=[23,49,23,50,23,5]
@@ -104,14 +107,16 @@ b=[46,49,7,49,12,30]
 print(a)
 print(b)
 a.extend(b)
-print(a)
+print("list is",a)
 c=(23,49,23,50,23,5)
 d=(46,49,7,49,12,30)
 print(c)
 print(d)
-c.extend(d)
-print(c)
-"""
+e=list(c)
+f=list(d)
+e.extend(f)
+print("tuple is",tuple(e))
+
 #Find the index of a particular element in a list and tuple.
 a=[23,49,23,50,23,5]
 b=(46,49,7,49,12,30)
@@ -119,6 +124,17 @@ print(a.index(23,1,4))
 print(b.index(49,2,5))
 """
 #Write a function that takes a list of numbers and returns a tuple of (min, max, average).
+choice="Y"
+while choice in "Yy":
+    x=input("enter the list")
+    choice=input("do you want to continue(Y/N)")
+print(x)
+c=list(x)
+print(c)
+b=tuple(c)
+print(b)
+print(max(b))
+print(min(b))
 
 """
 Given a list of tuples, sort it based on the second element in each tuple.
